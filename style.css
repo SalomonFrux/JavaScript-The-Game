@@ -43,6 +43,7 @@ body {
     float: left;
     height: 600px;
     padding: 100px;
+    position: relative;
 }
 
 
@@ -91,7 +92,7 @@ body {
     
 }
 
-.player-current-box {
+.player-current-box-0 {
     background-color: #150e0e;
     color: #e40404;
     width: 40%;
@@ -100,6 +101,14 @@ body {
     text-align: center;
 }
 
+.player-current-box-1 {
+    background-color: #150e0e;
+    color: #e40404;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
 .player-current-label {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -146,7 +155,7 @@ i {
     transition: margin 0.3s;
     font-weight: 500;
 }
-.btn-new { top: 45px; color: black; font-weight: 500;}
+.btn-new { top: 45px; color: white; font-weight: 500; background-color: black}
 .btn-roll { top: 403px;    color: white;}
 .btn-hold { top: 467px;    color: white;}
 
@@ -162,8 +171,28 @@ i {
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 500; color: #20bf6b; }
 
-.img0Happy{
-    margin-left: 62px;
-    height: 60px;
-    width: 60px;
+.img0Happy {
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    margin-left: 44px;
+    position: absolute;
+    top: 320px;
+    border-radius: 50%;
+ 
+}
+.imgDisplay{
+display: none;
+}
+
+.copyRight{
+    width: 369px;
+    top: 571px;
+    left: 826px;
+    cursor: none;
+    color:black
+}
+
+.copyRight :hover{
+    cursor: none;
 }

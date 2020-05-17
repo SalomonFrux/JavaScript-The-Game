@@ -58,7 +58,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
 
         document.querySelector('.player-' + isNotActivePlayer + '-panel').style.backgroundColor = 'black';
         document.querySelector('#score-' + isNotActivePlayer).style.color ='white';
-      
+       document.querySelector('#imgA-' + isNotActivePlayer).classList.remove('imgDisplay')
       
     }else{
         nextPlayer();
