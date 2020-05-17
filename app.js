@@ -43,7 +43,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
     document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
     
     //Set the winner 
-    if(score[activePlayer] >= 5){
+    if(score[activePlayer] >= 30){
      
         document.querySelector('#name-'+ activePlayer).textContent = 'VICTOIRE!'
         diceDisplay.style.display ='none';
