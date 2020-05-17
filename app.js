@@ -43,15 +43,15 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
     document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
     
     //Set the winner 
-    if(score[activePlayer] >= 15){
-       
+    if(score[activePlayer] >= 5){
+     
         document.querySelector('#name-'+ activePlayer).textContent = 'VICTOIRE!'
         diceDisplay.style.display ='none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active')
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
         document.querySelector('.btn-roll').style.display ='none';
         document.querySelector('.btn-hold').style.display ='none';
-       document.querySelector('#imgD-' + activePlayer).classList.remove('imgDisplay')
+    //    document.querySelector('#imgD-' + activePlayer).classList.remove('imgDisplay')
         
 
          
@@ -59,8 +59,18 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
 
         document.querySelector('.player-' + isNotActivePlayer + '-panel').style.backgroundColor = 'black';
         document.querySelector('#score-' + isNotActivePlayer).style.color ='white';
-       document.querySelector('#imgA-' + isNotActivePlayer).classList.remove('imgDisplay')
+    //    document.querySelector('#imgA-' + isNotActivePlayer).classList.remove('imgDisplay')
       
+   
+    
+       if(activePlayer===0){
+        document.querySelector('#imgAM-' + isNotActivePlayer).classList.remove('imgDisplay')  
+        document.querySelector('#imgD-' + activePlayer).classList.remove('imgDisplay')
+       }else{
+        document.querySelector('#tenor-' + activePlayer).classList.remove('imgDisplay')  
+        document.querySelector('#imgA-' + isNotActivePlayer).classList.remove('imgDisplay') 
+       }
+
     }else{
         nextPlayer();
     }
