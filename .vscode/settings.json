@@ -1,0 +1,7 @@
+{
+    "git.showPushSuccessNotification": true,
+    "git.postCommitCommand": "push",
+    "gitlab.removeSourceBranch": true,
+    "git.autofetch": true,
+    "github.statusbar.enabled": true,
+}

@@ -7,7 +7,7 @@ GAME RULES:
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
-*/ let score = [0,0], roundScore, activePlayer, dice;
+*/ let score = [0,0], roundScore, activePlayer, dice, isNotActivePlayer;
 roundScore =0;
 activePlayer = 0;
 
@@ -43,13 +43,22 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
     document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
     
     //Set the winner 
-    if(score[activePlayer] >= 25){
+    if(score[activePlayer] >= 5){
+       
         document.querySelector('#name-'+ activePlayer).textContent = 'YOU WIN!'
         diceDisplay.style.display ='none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active')
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
         document.querySelector('.btn-roll').style.display ='none';
         document.querySelector('.btn-hold').style.display ='none';
+        
+
+         
+        activePlayer===0? isNotActivePlayer = 1 : isNotActivePlayer = 0;
+
+        document.querySelector('.player-' + isNotActivePlayer + '-panel').style.backgroundColor = 'black';
+        document.querySelector('#score-' + isNotActivePlayer).style.color ='white';
+      
       
     }else{
         nextPlayer();

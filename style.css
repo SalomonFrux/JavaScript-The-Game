@@ -32,7 +32,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:  #39647e;;
+    background-color:  #95a5a6;;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
@@ -71,7 +71,7 @@ body {
     color: black;
 }
 .active { 
-    background-color: #6ab04c;
+    background-color: #009432;
     transition: ease-in;
     transition-property: background-color; 
     transition-duration: 0.5s;
@@ -161,3 +161,9 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 500; color: #20bf6b; }
+
+.img0Happy{
+    margin-left: 62px;
+    height: 60px;
+    width: 60px;
+}
