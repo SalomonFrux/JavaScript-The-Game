@@ -43,14 +43,15 @@ document.querySelector('.btn-hold').addEventListener('click', function(e){
     document.querySelector('#score-' + activePlayer).textContent = score[activePlayer];
     
     //Set the winner 
-    if(score[activePlayer] >= 5){
+    if(score[activePlayer] >= 15){
        
-        document.querySelector('#name-'+ activePlayer).textContent = 'YOU WIN!'
+        document.querySelector('#name-'+ activePlayer).textContent = 'VICTOIRE!'
         diceDisplay.style.display ='none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active')
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
         document.querySelector('.btn-roll').style.display ='none';
         document.querySelector('.btn-hold').style.display ='none';
+       document.querySelector('#imgD-' + activePlayer).classList.remove('imgDisplay')
         
 
          
