@@ -1,16 +1,24 @@
+//Now  let see method borrowing in JS
+
+
+
+
+
+
 //Now learning Closure in JS; an inner fn accessing the var in the outer fn 
 
-function retirementAge(retirementAgeInYourCountry){
+// function retirementAge(retirementAgeInYourCountry){
     
-    var info =' Years left for you to retire';
+//     var info =' Years left for you to retire';
 
-    return function(YourDateOfBirth){
-        var yourAge = new Date().getFullYear() - YourDateOfBirth; 
-        console.log(retirementAgeInYourCountry - yourAge + info)
-    }
-}
+//     return function(YourDateOfBirth){
+//         var yourAge = new Date().getFullYear() - YourDateOfBirth; 
+//         console.log(retirementAgeInYourCountry - yourAge + info)
+//     }
+// }
 
-retirementAge(65)(1991)
+// retirementAge(65)(1991)
+
 // years = [1990, 1991, 1981];
 
 //   //parsing function as argument in JavaScript 
