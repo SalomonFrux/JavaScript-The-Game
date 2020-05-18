@@ -1,6 +1,6 @@
 years = [1990, 1991, 1981];
 
-   
+  //parsing function as argument in JavaScript 
 
 function ageCal(dateOfBirth){
     return ( new Date().getFullYear() - dateOfBirth)
@@ -14,11 +14,20 @@ function arrayList(arr, fn ){
     }
     return array;
     }
-    
- 
-
 let ages = arrayList(years, ageCal)
 
-console.log(ages)
-//parsing function as argument in JavaScript
+// First class function in Js ... A function that return another function
 
+function firstFunction(profession){
+
+return  function(name){
+        if(profession === 'Teacher'){
+            console.log(`Hi ${name} what subject do you teach?`) 
+        }
+        else(
+            console.log('Please explain what your job is about.')
+        )
+    }
+}
+
+ firstFunction('Teacher')('Sam')
