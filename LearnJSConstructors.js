@@ -2,9 +2,6 @@
 
 
 
-
-
-
 //Now learning Closure in JS; an inner fn accessing the var in the outer fn 
 
 // function retirementAge(retirementAgeInYourCountry){
